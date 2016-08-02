@@ -7,8 +7,8 @@ namespace FaceppSDK
 {
     class Constants
     {
-        public static String FACE_KEY = "2affcadaeddd18f422375adc869f3991";
-        public static String FACE_SECRET = "EsU9hmgweuz8U-nwv6s4JP-9AJt64vhz";
+        public static String FACE_KEY = "19ce2dea0ba9f5297ecec1ffb1d16fa2";//"2affcadaeddd18f422375adc869f3991";
+        public static String FACE_SECRET = "HPO_sQ-BRzquMezuXearcYwzlqvKBF3R";//"EsU9hmgweuz8U-nwv6s4JP-9AJt64vhz";
 	
 	    public static  String URL_DETECT = "https://apicn.faceplusplus.com/v2/detection/detect"; 
 	    public static  String URL_COMPARE = "https://apicn.faceplusplus.com/v2/recognition/compare"; 

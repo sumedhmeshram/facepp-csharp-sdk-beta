@@ -22,7 +22,7 @@ namespace FaceppDemo
     /// </summary>
     public partial class MainWindow : Window
     {
-        public FaceService fs = new FaceService("2affcadaeddd18f422375adc869f3991", "EsU9hmgweuz8U-nwv6s4JP-9AJt64vhz");
+        public FaceService fs = new FaceService("19ce2dea0ba9f5297ecec1ffb1d16fa2", "HPO_sQ-BRzquMezuXearcYwzlqvKBF3R");
         public MainWindow()
         {
             InitializeComponent();
@@ -56,11 +56,11 @@ namespace FaceppDemo
             image1.Source = bitmap;
             PngBitmapEncoder pngE = new PngBitmapEncoder();
             pngE.Frames.Add(BitmapFrame.Create(bitmap));
-            using (Stream stream = File.Create(System.Environment.CurrentDirectory + "temp.jpg"))
+            using (Stream stream = File.Create(System.IO.Path.Combine(System.Environment.CurrentDirectory, "temp.jpg")))
             {
                 pngE.Save(stream);
             }
-            DetectResult res = fs.Detection_DetectImg(System.Environment.CurrentDirectory + "temp.jpg");
+            DetectResult res = fs.Detection_DetectImg(System.IO.Path.Combine(System.Environment.CurrentDirectory, "temp.jpg"));
             canvas1.Children.Clear();
             for (int i = 0; i < res.face.Count; ++i)
             {
