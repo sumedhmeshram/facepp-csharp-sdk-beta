@@ -1,15 +1,27 @@
-##您只需要做以下几个步骤就可以将FacePlusPlus SDK集成到您的C#工程中
+1. Create a new C # project (asp / form / wpf / ...)
 
-1. 新建一个C#的项目(asp/form/wpf/...)
+2. Set the target framework for the project 's .NET Framework 4 ( for .NET 4 Client Profile may not be available )
 
-2. 设置项目的目标框架为.NET Framework 4(对于.NET 4 Client Profile可能无法使用)
+3. Add the root directory log4net.dll and references to FaceppSDK.dll
 
-3. 把根目录中的log4net.dll和FaceppSDK.dll添加到引用中
+4. Add faceppSDK namespace
 
-4. 添加faceppSDK命名空间
+5. Use your appkey and appsecret initialize a FaceService
 
-5. 使用你的appkey和appsecret初始化一个FaceService
+6. Start to enjoy the various features!
 
-6. 开始尽情的使用各种功能吧！
+- Greater use of the sample method can be found in "FaceppDemo" Project -
 
--- 更多的使用方法样例可以在“FaceppDemo”工程中发现 --
+1. Create a new C # project (asp / form / wpf / ...)
+
+2. Set the target framework for the project 's .NET Framework 4 ( for .NET 4 Client Profile may not be available )
+
+3. Add the root directory log4net.dll and references to FaceppSDK.dll
+
+4. Add faceppSDK namespace
+
+5. Use your appkey and appsecret initialize a FaceService
+
+6. Start to enjoy the various features!
+
+- Greater use of the sample method can be found in "FaceppDemo" Project -
